@@ -1,0 +1,118 @@
+/* Base styling */
+body {
+    background-color: #e9f5f9; /* Light blue background for the overall page */
+    font-family: 'Arial', sans-serif; /* Modern font */
+}
+
+/* Style for the container */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style for the form */
+#userInfoForm {
+    background-color: #fff8f0; /* Soft peach background for the form */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid #f0c2a0; /* Complementary border color */
+}
+
+/* Style for the header and logo */
+h2 {
+    color: #307473; /* Deep teal color for the heading */
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+img {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 150px; /* Adjust logo size */
+}
+
+/* Style for form elements */
+.form-group label {
+    color: #525252; /* Dark gray color for labels */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.form-control {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.2s;
+}
+
+.form-control:focus {
+    border-color: #4A90E2; /* Blue border on focus */
+    outline: 0;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(74, 144, 226, 0.6);
+}
+
+/* Styling checkboxes */
+.form-check-input {
+    width: 20px;
+    height: 20px;
+    margin-top: 0;
+    margin-right: 10px; /* Space between checkbox/radio and label */
+}
+
+/* Additional margin for checkbox labels */
+.form-check-label {
+    margin-left: 8px; /* Space after checkboxes */
+}
+
+/* Custom alignment for radio button labels */
+.form-check-inline .form-check-label {
+    display: flex;
+    align-items: center; /* Ensures vertical alignment with the radio button */
+    margin-left: 4px; /* Space between radio button and label */
+}
+
+/* Style for the radio button input */
+.form-check-inline .form-check-input {
+    position: relative;
+    top: 50%;
+    transform: translateY(-30%);
+}
+
+/* Center align buttons */
+.button-group {
+    text-align: center; /* Center-align the container */
+}
+
+.button-group .btn {
+    margin: 10px; /* Spacing between buttons */
+}
+
+/* Style for buttons */
+.btn {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #4A90E2; /* Blue button */
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #FF6B6B; /* Red button */
+    color: white;
+}
+
+.btn-info {
+    background-color: #F7B32B; /* Orange button */
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}

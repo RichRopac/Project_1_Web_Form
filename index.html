@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--
+    Author: Richard C. Ropac
+    Description: Project 1 - Create Web form by using HTML, CSS, Javascript 
+-->
+<html>
+  <head>
+    <title>User Information</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <!-- Datepicker CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="text-center mb-4">
+        <h2>User Information</h2>
+        <img src="/Assests/Images/logo.png" alt="Logo" class="mb-3" />
+      </div>
+
+      <form id="userInfoForm">
+        <!-- Username -->
+        <div class="form-group">
+          <label for="userName">User Name:</label>
+          <input type="text" class="form-control" id="userName" />
+        </div>
+
+        <!-- User Job Type -->
+        <div class="form-group">
+          <label for="userJobType">User Job Type:</label>
+          <select class="form-control" id="userJobType">
+            <option>Programmer</option>
+            <option>Designer</option>
+            <option>Tech Support</option>
+            <option>Accounting</option>
+          </select>
+        </div>
+
+        <!-- User Category -->
+        <div class="form-group">
+          <label>User Category:</label>
+          <div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="userCategory"
+                id="local"
+                value="Local"
+              />
+              <label class="form-check-label" for="local">Local</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="userCategory"
+                id="westCoast"
+                value="West Coast"
+              />
+              <label class="form-check-label" for="westCoast">West Coast</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="userCategory"
+                id="eastCoast"
+                value="East Coast"
+              />
+              <label class="form-check-label" for="eastCoast">East Coast</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Operating System -->
+        <div class="form-group">
+          <label>Operating System(s):</label>
+          <div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="linux"
+                value="Linux"
+              />
+              <label class="form-check-label" for="linux">Linux</label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="windows"
+                value="Windows"
+              />
+              <label class="form-check-label" for="windows">Windows</label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="appleMacOS"
+                value="Apple macOS"
+              />
+              <label class="form-check-label" for="appleMacOS"
+                >Apple macOS</label
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Comments -->
+        <div class="form-group">
+          <label for="comments">Comments:</label>
+          <textarea class="form-control" id="comments" rows="3"></textarea>
+        </div>
+
+        <!-- Sport Type -->
+        <div class="form-group" id="sportTypeGroup">
+          <label for="sportType">Sports Type:</label>
+          <select class="form-control" id="sportType">
+            <option>Basketball</option>
+            <option>Soccer</option>
+            <option>Football</option>
+            <option>Baseball</option>
+          </select>
+        </div>
+
+        <!-- Form Date -->
+        <div class="form-group">
+          <label for="formDate">Form Date:</label>
+          <input type="text" class="form-control" id="formDate" />
+        </div>
+
+        <!-- Buttons -->
+        <div class="button-group">
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="reset" class="btn btn-secondary">Reset</button>
+          <button type="button" class="btn btn-info" onclick="reloadForm()">
+            Reload
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Datepicker JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
